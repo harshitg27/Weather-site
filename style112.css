@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+
+/* Header  */
+
+#header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: #0041C2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    box-shadow: 0 2px 10px #0020C2;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+/* all the divs inside the navigation bar should be placed side by side*/
+.header > div {
+	display: inline-block;
+}
+.title-combo{
+    display: inline-block;
+}
+/* animation for the website logo */
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} 
+*/
+/* website logo image */
+/* .logo {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	animation-name: rotating;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+} */
+
+.title-combo > div {
+    font-size: 10px;
+    color: #F4F9FF;
+    background-color: #293251;
+}
+
+
+.logo {
+    height: 80%;
+    width: 10%;
+    margin-left: 25px;
+}
+
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+/* search icon for input bar */
+.search-ico {
+    width: 12px;
+}
+/* mic icon for input */
+.mic-ico {
+    width: 12px;
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 0%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 0%;
+	transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+	outline: none;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list {
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.horizontal-list li {
+    margin: 0px 10px;
+}
+
+
+#navbar li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+#navbar li a:hover  {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+/* removing all the styles from the links and formatting them white */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #F4F9FF;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+    
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+    
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+
