@@ -223,7 +223,7 @@ input:focus {
     font-size: 45px;
 }
 
-.allCondition div{
+.allCondition > div{
     padding: 10px 2.5%;
     font-size: 20px;
 }
@@ -233,7 +233,50 @@ input:focus {
 }
 
 .content{
+    padding: 10px 2.5%;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #454545;
+}
+
+/* Forcast Section */
+
+.forecast > div{
+    padding: 10px 2.5%;
+    font-size: 20px;
+    width: 100%;
+}
+
+.hourlyForcast{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.forcastCard{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-right: 1px solid #454545;
+    padding: 10px 2.5%;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.forcastCondition {
+    width: 80%;
+}
+.forcastHum{
+    display: flex;
+    justify-content: center;
+}
+
+.forcastHum img {
+    width: 20%;
+    height: 20%;
 }
