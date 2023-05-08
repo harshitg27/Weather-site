@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fa8fbc6eaf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Weather</title>
 </head>
 <body>
 
@@ -48,14 +48,73 @@
         </div>
     </header>
 
-    <section class="notification">
+    <section class="liveTempAndCity">
 
         <p>Temp</p>
 
     </section>
 
+    <main class="main-content">
+        <section class="currentCondition">
+            <div class="currentConditionHeader">
+                <h1>City</h1>
+                <span>Time</span>
+            </div>
+            <div class="currentConditionBody">
+                <div class="currentCondition">
+                    <h1 id="temp">27 C</h1>
+                    <p id="condition">Weather</p>
+                    <p id="minTemp">Min Temp : 20</p>
+                    <p id="maxTemp">Max Temp : 35</p>
+                </div>
+                <div>
+                    <img id="conditionImg" alt="condition">
+                </div>
+            </div>
+        </section>
+
+        <section class="allCondition">
+            <div id="showWeather">
+                <h3>Weather Today in <span>city</span></h3>
+                <h2 id="feel" style="margin-bottom: 0%;">30</h2>
+                <p style="margin-top: 0%; font-size: 15px;">Feel like</p>
+                <div class="content">
+                    <p>High/Low</p>
+                    <p id="highLow">35/25</p>
+                </div>
+                <div class="content">
+                    <p>Sunrise</p>
+                    <p id="sunrise">05:30</p>
+                </div>
+                <div class="content">
+                    <p>Sunset</p>
+                    <p id="sunset">18:47</p>
+                </div>
+                <div class="content">
+                    <p>Wind</p>
+                    <p id="wind">13 km/h</p>
+                </div>
+                <div class="content">
+                    <p>Humidity</p>
+                    <p id="humidity">33%</p>
+                </div>
+                <div class="content">
+                    <p>Pressure</p>
+                    <p id="pressure">1000 mb</p>
+                </div>
+                <div class="content">
+                    <p>Visibility</p>
+                    <p id="visibility">500</p>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+        
     <script src="app.js">
 
     </script>
 </body>
+
 </html>

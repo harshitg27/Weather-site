@@ -163,14 +163,77 @@ input:focus {
     border-bottom: 1px solid black;
 }
 
-.notification {
+.liveTempAndCity {
     height: 4vh;
     padding: 1% 7%;
     border-bottom: 1px solid lightgray;
     background-color: #797979;
 }
 
-.notification p {
+.liveTempAndCity p {
     font-size: 25px;
     vertical-align: middle;
+}
+
+/* Main Content items */
+
+.main-content {
+    width: 65%;
+    height: 100%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-content section {
+    border-radius: 10px;
+    background-color: white;
+    margin: 0% 2% 1%;
+    width: 75%;
+    min-height: 100px;
+    
+}
+
+.currentConditionHeader {
+    background-color:#3D3C3A;
+    padding: 10px 2.5%;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.currentConditionHeader span{
+    align-self: flex-end;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.currentConditionBody {
+    background-color:#4E5180;
+    padding: 10px 2.5%;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#temp{
+    font-size: 45px;
+}
+
+.allCondition div{
+    padding: 10px 2.5%;
+    font-size: 20px;
+}
+
+.currentCondition p{
+    font-size: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #454545;
 }
